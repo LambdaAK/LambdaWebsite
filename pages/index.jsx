@@ -3,10 +3,10 @@ import React from 'react'
 import BigTextBox from '../utility/BigTextBox'
 import color from '../utility/color'
 import dummyText from '../utility/dummyText'
+import IndexAboutBot from '../utility/IndexAboutBot'
 import IndexTauPictures from '../utility/IndexTauPictures'
+import Navigationbar from '../utility/NavigationBar'
 import Chat from './chat'
-
-
 
 
 export default class Home extends React.Component {
@@ -35,14 +35,12 @@ export default class Home extends React.Component {
 
   render() {
     return (
-
-      <div style = {{backgroundColor: color.darker}}>
-       <BigTextBox title="Tau" content={dummyText}/>
-       <IndexTauPictures/>
-        
-          
-        
-        </div>
+      <div style = {Home.topDivStyle}>
+        <Navigationbar/>
+        <BigTextBox title="Tau" content={dummyText}/>
+        <IndexTauPictures/>
+        <IndexAboutBot/>
+      </div>
     )
   }
 }
