@@ -1,7 +1,7 @@
 import React from "react";
-import color from "../utility/color";
-import CommandDescription from "../utility/CommandDescription";
-import Navigationbar from "../utility/NavigationBar";
+import color from "./color";
+import CommandDescription from "./CommandDescription";
+import Navigationbar from "./NavigationBar";
 import BigTextBox from "./BigTextBox";
 
 export default class CommandsDescriptions extends React.Component {

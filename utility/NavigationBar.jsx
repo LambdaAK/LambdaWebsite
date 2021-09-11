@@ -6,6 +6,8 @@ export default class Navigationbar extends React.Component {
         super(props)
     }
 
+    
+
     static linkStyle = {
         color: color.blurple,
         textDecoration: 'none',

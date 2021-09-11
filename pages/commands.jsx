@@ -10,7 +10,23 @@ export default class Commands extends React.Component {
     }
 
     static commands = [
-        {syntax: 'play <song>', description: 'The bot plays a song'}
+        {syntax: 'play <song>', description: 'The bot plays a song'},
+        {syntax: 'queue', description: 'The bot displays the currency music queue in order.'},
+        {syntax: 'play <song>', description: 'The bot plays a song'},
+        {syntax: 'queue', description: 'The bot displays the currency music queue in order.'},
+        {syntax: 'play <song>', description: 'The bot plays a song'},
+        {syntax: 'queue', description: 'The bot displays the currency music queue in order.'},
+        {syntax: 'play <song>', description: 'The bot plays a song'},
+        {syntax: 'queue', description: 'The bot displays the currency music queue in order.'},
+        {syntax: 'play <song>', description: 'The bot plays a song'},
+        {syntax: 'queue', description: 'The bot displays the currency music queue in order.'},
+        {syntax: 'play <song>', description: 'The bot plays a song'},
+        {syntax: 'queue', description: 'The bot displays the currency music queue in order.'},
+        {syntax: 'play <song>', description: 'The bot plays a song'},
+        {syntax: 'queue', description: 'The bot displays the currency music queue in order.'},
+        {syntax: 'play <song>', description: 'The bot plays a song'},
+        {syntax: 'queue', description: 'The bot displays the currency music queue in order.'},
+        
     ]
 
     static topDivStyle = {
