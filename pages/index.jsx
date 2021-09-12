@@ -1,3 +1,4 @@
+import { AnimatePresence, motion } from 'framer-motion'
 import Head from 'next/head'
 import React from 'react'
 import BigTextBox from '../utility/BigTextBox'
@@ -6,7 +7,6 @@ import dummyText from '../utility/dummyText'
 import IndexAboutBot from '../utility/IndexAboutBot'
 import IndexTauPictures from '../utility/IndexTauPictures'
 import Navigationbar from '../utility/NavigationBar'
-import Chat from './chat'
 
 
 export default class Home extends React.Component {
@@ -35,12 +35,14 @@ export default class Home extends React.Component {
 
   render() {
     return (
-      <div style = {Home.topDivStyle}>
+      <AnimatePresence exitBeforeEnter={true}>
+      <motion.div initial = {{opacity: 0}} animate={{opacity: 1}} exit={{ opacity: 0}} style = {Home.topDivStyle}>
         <Navigationbar/>
         <BigTextBox title="Tau" content={dummyText}/>
         <IndexTauPictures/>
         <IndexAboutBot/>
-      </div>
+      </motion.div>
+      </AnimatePresence>
     )
   }
 }

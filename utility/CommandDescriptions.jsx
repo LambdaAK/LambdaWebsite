@@ -26,7 +26,7 @@ export default class CommandsDescriptions extends React.Component {
                 <BigTextBox title = "Tau's Commands" content = "These are the commands Tau currently supports"/>
                     <br />
                     <br />
-                    
+
                     {
                     this.props['commands'].map(command => {
                         return (

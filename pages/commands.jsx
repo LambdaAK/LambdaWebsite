@@ -5,6 +5,7 @@ import CommandDescriptions from "../utility/CommandDescriptions";
 import Navigationbar from "../utility/NavigationBar";
 import Swup from 'swup'
 import allCommands from "../utility/allCommands";
+import { AnimatePresence, motion } from "framer-motion";
 
 export default class Commands extends React.Component {
     constructor(props) {
@@ -25,10 +26,12 @@ export default class Commands extends React.Component {
 
     render() {
         return (
-            <div style = {Commands.topDivStyle}>
-                <Navigationbar/>
-                <CommandDescriptions commands = {Commands.commands}/>
-            </div>
+            <AnimatePresence exitBeforeEnter={true}>
+            <motion.div initial = {{ opacity: 0}} animate={{opacity: 1}} exit={{ opacity: 0}} style = {Commands.topDivStyle}>
+            <Navigationbar/>
+            <CommandDescriptions commands = {Commands.commands}/>
+            </motion.div>
+            </AnimatePresence>
         )
     }
 }
