@@ -1,6 +1,8 @@
 import React from "react";
 import color from "./color";
 
+import { motion } from "framer-motion";
+
 export default class Navigationbar extends React.Component {
     constructor(props) {
         super(props)
@@ -20,7 +22,10 @@ export default class Navigationbar extends React.Component {
 
     render() {
         return (
-
+        <motion.div
+            animate={{ x: 20 }}
+            transition={{ yoyo: 1}}
+        >
         <nav>
         <ul>
             <li><a style = {Navigationbar.linkStyle} href = '/'>Home Page</a></li>
@@ -29,6 +34,10 @@ export default class Navigationbar extends React.Component {
      
         </ul>
         </nav>
+        </motion.div>
         )
+
+        
     }
+
 }

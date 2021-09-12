@@ -3,31 +3,15 @@ import color from "../utility/color";
 import CommandDescription from "../utility/CommandDescription";
 import CommandDescriptions from "../utility/CommandDescriptions";
 import Navigationbar from "../utility/NavigationBar";
+import Swup from 'swup'
+import allCommands from "../utility/allCommands";
 
 export default class Commands extends React.Component {
     constructor(props) {
         super(props)
     }
 
-    static commands = [
-        {syntax: 'play <song>', description: 'The bot plays a song'},
-        {syntax: 'queue', description: 'The bot displays the currency music queue in order.'},
-        {syntax: 'play <song>', description: 'The bot plays a song'},
-        {syntax: 'queue', description: 'The bot displays the currency music queue in order.'},
-        {syntax: 'play <song>', description: 'The bot plays a song'},
-        {syntax: 'queue', description: 'The bot displays the currency music queue in order.'},
-        {syntax: 'play <song>', description: 'The bot plays a song'},
-        {syntax: 'queue', description: 'The bot displays the currency music queue in order.'},
-        {syntax: 'play <song>', description: 'The bot plays a song'},
-        {syntax: 'queue', description: 'The bot displays the currency music queue in order.'},
-        {syntax: 'play <song>', description: 'The bot plays a song'},
-        {syntax: 'queue', description: 'The bot displays the currency music queue in order.'},
-        {syntax: 'play <song>', description: 'The bot plays a song'},
-        {syntax: 'queue', description: 'The bot displays the currency music queue in order.'},
-        {syntax: 'play <song>', description: 'The bot plays a song'},
-        {syntax: 'queue', description: 'The bot displays the currency music queue in order.'},
-        
-    ]
+    static commands = allCommands
 
     static topDivStyle = {
         backgroundColor: color.darker,
